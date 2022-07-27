@@ -29,8 +29,16 @@ dbg!(acceleration);
 
 For matricies:
 ```rust
-let nums = mat![
+let vel = mat![
     1.0, 2.0;
     3.0, 4.0
 ];
+
+// Units apply to matricies, meaning our physics math is perfectly unit safe.
+
+let charge = 1.3.microcoloumbs();
+let field = mat![1.0, 2.0, 3.0];
+let velocity = mat![1.0, 2.0, 3.0].meters().per_second();
+
+let force: Force3 = charge * field.cross(&velocity);
 ```

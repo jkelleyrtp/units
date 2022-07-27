@@ -2,6 +2,7 @@
 
 use std::marker::PhantomData;
 
+mod matrix;
 mod value;
 
 struct Matrix<T> {
