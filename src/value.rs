@@ -215,10 +215,6 @@ fn demo() {
     let area: Area = 1.0.meters().squared();
     let pressure: Pressure = force / area;
 
-    // let a = force + acceleration;
-
-    // let a = force + acceleration;
-
     let scaled: Distance = distance / 2.0;
     let scaled: Distance = distance * 2.0;
 
